@@ -17,6 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	ImageMagick
+BuildRequires:	ImageMagick-decoder-png
 %if %{!?_without_tests:1}0
 BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-TextUtil >= 0.80
