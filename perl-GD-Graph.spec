@@ -3,7 +3,7 @@ Summary:	GD-Graph perl module
 Summary(pl):	Modu³ perla GD-Graph
 Name:		perl-GD-Graph
 Version:	1.33
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-TextUtil
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
