@@ -2,7 +2,7 @@
 Summary:	GD-Graph perl module
 Summary(pl):	Modu³ perla GD-Graph
 Name:		perl-GD-Graph
-Version:	1.24
+Version:	1.32
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -39,7 +39,7 @@ install samples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/GD/Graph
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
