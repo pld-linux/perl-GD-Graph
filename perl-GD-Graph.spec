@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}
 # Source0-md5:	cf546f2de827a56458afe288ab0807f2
 Patch0:		%{name}-samples.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	ImageMagick
 BuildRequires:	ImageMagick-coder-png
 %if %{with tests}
