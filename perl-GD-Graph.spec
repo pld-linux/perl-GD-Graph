@@ -2,10 +2,11 @@
 Summary:	GD-Graph perl module
 Summary(pl):	Modu³ perla GD-Graph
 Name:		perl-GD-Graph
-Version:	1.32
+Version:	1.33
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/GD/GDGraph-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-18
@@ -42,8 +43,7 @@ install samples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
   mv -f .packlist.new .packlist
 )
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        CHANGES README *txt
+gzip -9nf CHANGES README *txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
