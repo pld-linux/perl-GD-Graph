@@ -10,7 +10,8 @@ Summary(pl):	Modu³ perla GD::Graph
 Name:		perl-GD-Graph
 Version:	1.43
 Release:	1
-License:	GPL
+# same as perl, but contains GPL v2+ font file required by examples, so
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 # Source0-md5:	cf546f2de827a56458afe288ab0807f2
@@ -46,18 +47,19 @@ Modu³ perla GD::Graph - s³u¿±cy do generowania wykresów z u¿yciem GD.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/samples
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install samples/*.{dat,pl,png,txt} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install samples/*.{dat,pl,png,txt} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/samples
+install *.ttf $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README *.ttf
+%doc CHANGES README
 %{perl_vendorlib}/GD/Graph.pm
 %{perl_vendorlib}/GD/Graph
 %{_mandir}/man3/*
