@@ -1,0 +1,39 @@
+--- GDGraph-1.43/samples/sample71.pl~	Wed Apr 21 07:28:21 2004
++++ GDGraph-1.43/samples/sample71.pl	Wed Apr 21 07:28:21 2004
+@@ -48,12 +48,12 @@
+ 	transparent => 0,
+ );
+ 
+-$my_graph->set_title_font('../Dustismo_Sans.ttf', 18);
+-$my_graph->set_x_label_font('../Dustismo_Sans.ttf', 10);
+-$my_graph->set_y_label_font('../Dustismo_Sans.ttf', 10);
+-$my_graph->set_x_axis_font('../Dustismo_Sans.ttf', 8);
+-$my_graph->set_y_axis_font('../Dustismo_Sans.ttf', 8);
+-$my_graph->set_legend_font('../Dustismo_Sans.ttf', 9);
++$my_graph->set_title_font('Dustismo_Sans.ttf', 18);
++$my_graph->set_x_label_font('Dustismo_Sans.ttf', 10);
++$my_graph->set_y_label_font('Dustismo_Sans.ttf', 10);
++$my_graph->set_x_axis_font('Dustismo_Sans.ttf', 8);
++$my_graph->set_y_axis_font('Dustismo_Sans.ttf', 8);
++$my_graph->set_legend_font('Dustismo_Sans.ttf', 9);
+ 
+ $my_graph->set_legend( qw( one two three four five six ) );
+ 
+@@ -68,7 +68,7 @@
+ 
+     $gdta = GD::Text::Align->new($gd,
+ 	text => 'GD::Graph',
+-	font => '../Dustismo_Sans.ttf',
++	font => 'Dustismo_Sans.ttf',
+ 	ptsize => 72,
+ 	colour => $pink,
+ 	valign => 'center',
+@@ -91,7 +91,7 @@
+ 
+     $gdta = GD::Text::Align->new($gd,
+ 	text => 'maximum',
+-	font => ['../Dustismo_Sans.ttf', GD::Font->Small],
++	font => ['Dustismo_Sans.ttf', GD::Font->Small],
+ 	ptsize => 12,
+ 	colour => $red,
+ 	valign => 'bottom',
