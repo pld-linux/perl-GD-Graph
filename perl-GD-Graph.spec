@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	GD
@@ -18,7 +18,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	ImageMagick
 BuildRequires:	ImageMagick-coder-png
-%if %{!?_without_tests:1}0
+%if %{with tests}
 BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-TextUtil >= 0.80
 %endif
@@ -41,8 +41,8 @@ Modu³ perla GD::Graph - s³u¿±cy do generowania wykresów z u¿yciem GD.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
-%{!?_without_tests:%{__make} samples}
+%{?with_tests:%{__make} test}
+%{?with_tests:%{__make} samples}
 
 %install
 rm -rf $RPM_BUILD_ROOT
