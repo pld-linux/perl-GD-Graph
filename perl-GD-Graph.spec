@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	GD-Graph perl module
-Summary(pl):	Modu³ perla GD-Graph
+Summary:	GD::Graph perl module
+Summary(pl):	Modu³ perla GD::Graph
 Name:		perl-GD-Graph
 Version:	1.33
 Release:	5
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GD-Graph perl module.
+GD::Graph perl module.
 
 %description -l pl
-Modu³ perla GD-Graph.
+Modu³ perla GD::Graph.
 
 %prep
 %setup -q -n GDGraph-%{version}
