@@ -15,6 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.6.1
+BuildRequires:	ImageMagick
 %if %{!?_without_tests:1}0
 BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-TextUtil
