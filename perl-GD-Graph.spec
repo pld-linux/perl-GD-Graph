@@ -14,7 +14,7 @@ BuildRequires:	perl-GD
 BuildRequires:	perl-GD-TextUtil
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 GD-Graph perl module
