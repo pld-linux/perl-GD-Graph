@@ -19,9 +19,11 @@ BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	ImageMagick
 %if %{!?_without_tests:1}0
 BuildRequires:	perl-GD >= 1.18
-BuildRequires:	perl-GD-TextUtil
+BuildRequires:	perl-GD-TextUtil >= 0.80
 %endif
 BuildArch:	noarch
+Requires:	perl-GD >= 1.18
+Requires:	perl-GD-TextUtil >= 0.80
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
