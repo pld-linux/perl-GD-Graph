@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	GD
-%define	pnam	Graph
+%define		pdir	GD
+%define		pnam	Graph
 Summary:	GD::Graph - graph plotting module for Perl
 Summary(pl):	GD::Graph - modu³ do rysowania grafów dla Perla
 Name:		perl-GD-Graph
