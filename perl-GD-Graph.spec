@@ -32,7 +32,7 @@ Modu³ perla GD::Graph - s³u¿±cy do generowania wykresów z u¿yciem GD.
 %setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
