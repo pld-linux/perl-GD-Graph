@@ -8,7 +8,7 @@
 Summary:	GD::Graph perl module
 Summary(pl):	Modu³ perla GD::Graph
 Name:		perl-GD-Graph
-Version:	1.37
+Version:	1.39
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
