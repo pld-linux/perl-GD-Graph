@@ -1,4 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
+%define	pdir	GD
+%define	pnam	Graph
 Summary:	GD::Graph perl module
 Summary(pl):	Modu³ perla GD::Graph
 Name:		perl-GD-Graph
@@ -6,22 +8,22 @@ Version:	1.33
 Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/GD/GDGraph-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-18
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
-BuildRequires:	perl-GD
+BuildRequires:	perl-GD >= 1.18
 BuildRequires:	perl-GD-TextUtil
+BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GD::Graph perl module.
+GD::Graph perl module - a package to generate charts, using GD.pm.
 
 %description -l pl
-Modu³ perla GD::Graph.
+Modu³ perla GD::Graph - s³u¿±cy do generowania wykresów z u¿yciem GD.
 
 %prep
-%setup -q -n GDGraph-%{version}
+%setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
 perl Makefile.PL
@@ -35,14 +37,12 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf CHANGES README *txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {CHANGES,README,20thcent_Read_Me.txt}.gz *.ttf
+%doc CHANGES README 20thcent_Read_Me.txt *.ttf
 %{perl_sitelib}/GD/Graph.pm
 %{perl_sitelib}/GD/Graph
 %{_mandir}/man3/*
