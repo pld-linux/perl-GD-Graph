@@ -8,12 +8,12 @@
 Summary:	GD::Graph perl module
 Summary(pl):	Modu³ perla GD::Graph
 Name:		perl-GD-Graph
-Version:	1.42
+Version:	1.43
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
-# Source0-md5:	530aa8288434e45a27a15ab53e83373d
+# Source0-md5:	cf546f2de827a56458afe288ab0807f2
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	ImageMagick
