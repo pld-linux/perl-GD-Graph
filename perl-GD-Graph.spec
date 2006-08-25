@@ -9,7 +9,7 @@ Summary:	GD::Graph - graph plotting module for Perl
 Summary(pl):	GD::Graph - modu³ do rysowania grafów dla Perla
 Name:		perl-GD-Graph
 Version:	1.4308
-Release:	3
+Release:	4
 # same as perl, but contains GPL v2+ font file required by examples, so
 License:	GPL v2+
 Group:		Development/Languages/Perl
