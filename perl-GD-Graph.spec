@@ -6,7 +6,7 @@
 %define		pdir	GD
 %define		pnam	Graph
 Summary:	GD::Graph - graph plotting module for Perl
-Summary(pl):	GD::Graph - modu≥ do rysowania grafÛw dla Perla
+Summary(pl.UTF-8):   GD::Graph - modu≈Ç do rysowania graf√≥w dla Perla
 Name:		perl-GD-Graph
 Version:	1.4308
 Release:	4
@@ -33,8 +33,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GD::Graph is a Perl module to create charts, using the GD module.
 
-%description -l pl
-Modu≥ Perla GD::Graph s≥uøy do tworzenia wykresÛw przy pomocy modu≥u
+%description -l pl.UTF-8
+Modu≈Ç Perla GD::Graph s≈Çu≈ºy do tworzenia wykres√≥w przy pomocy modu≈Çu
 GD.
 
 %prep
