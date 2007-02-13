@@ -6,7 +6,7 @@
 %define		pdir	GD
 %define		pnam	Graph
 Summary:	GD::Graph - graph plotting module for Perl
-Summary(pl.UTF-8):   GD::Graph - moduł do rysowania grafów dla Perla
+Summary(pl.UTF-8):	GD::Graph - moduł do rysowania grafów dla Perla
 Name:		perl-GD-Graph
 Version:	1.4308
 Release:	4
