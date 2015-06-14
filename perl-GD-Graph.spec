@@ -8,14 +8,14 @@
 Summary:	GD::Graph - graph plotting module for Perl
 Summary(pl.UTF-8):	GD::Graph - moduł do rysowania grafów dla Perla
 Name:		perl-GD-Graph
-Version:	1.48
+Version:	1.49
 Release:	1
 Epoch:		1
 # same as perl, but contains GPL v2+ font file required by examples, so
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
-# Source0-md5:	2c9e4feb4246200d96b9faa8024b0bf0
+# Source0-md5:	8bb270a30fea27491302b39b701b3d4e
 Patch0:		%{name}-samples.patch
 URL:		http://search.cpan.org/dist/GDGraph/
 BuildRequires:	ImageMagick
