@@ -4,7 +4,6 @@
 
 %define		pdir	GD
 %define		pnam	Graph
-%include	/usr/lib/rpm/macros.perl
 Summary:	GD::Graph - graph plotting module for Perl
 Summary(pl.UTF-8):	GD::Graph - moduł do rysowania grafów dla Perla
 Name:		perl-GD-Graph
